@@ -1,0 +1,144 @@
+Research Proposal:
+
+Abstract—The aim of this research project and subsequent
+master’s thesis is to develop a system that helps recycle plastics
+for different applications such as 3D-printing. To achieve this
+goal a visual style of discrimination is used to sort different
+types of synthetic material or to detect unusable combinations
+of plastics and other plastics or plastics and other materials.
+Machine learning models will be implemented to automate this
+task.
+Keywords—plastic recycling, Machine Learning, visual discrimination
+Processes in manufacturing like 3D printing rely on a certain
+level of purity in the consumed material. To achieve such
+purity the most common solution for acquiring these materials
+is to buy them wholesale from an industrial supplier. In today’s
+age with environmental consciousness on the rise the desire
+to obtain the needed materials from recycled sources has
+increased drastically. To solve both problems, the demanded
+purity of materials and the recycled source this project aims
+to develop a system that ensures a user-friendly device which
+allows the discrimination of different kinds of plastic.
+I. CONTRIBUTION
+This Project aims to develop a system that discriminates
+different kinds of plastics, a "smart waste bin". The design
+should feature one designated area to place plastic waste and
+an easy-to-understand interface that tells the user different stats
+about the levels of the different compartments of plastic and
+the type of plastic that just got placed into the system. For this
+system to work the following features need to be developed:
+• visual detection
+• visual processing
+• easy-to-use interface
+• automated functionality via Machine Learning
+• network capability to check status remotely
+• messaging capability in case of error or other maintenance needs
+The main goal, however, is implementing the visual discrimination system. Different approaches have been successful in
+distinguishing between different kinds of synthetic material
+using cameras and certain filters and visual processing, even
+implementing Machine Learning automation. [1]
+II. RELEVANCE
+The relevance of this project is reflected in the global effort
+to strive for new ways to reduce the negative impact on
+the Environment of industrial processes. Techniques like 3DPrinting have made a huge impact on a lot of different fields
+of engineering. It also provided the ability to produce needed
+spare parts in secluded regions of the world. The ability to use
+this technology in combination with the reduction of plastic
+waste would mean a big step toward a more sustainable future.
+This project aims to provide a small-scale solution to reduce
+plastic waste in a single building. Any kind of plastic waste
+can be thrown into the bin. It will be analyzed and then decided
+if it can be used in any process or if it will be discarded into
+regular plastic waste.
+III. ORIGINALITY & RELATED WORK
+The work that defines this field consists of two branches.
+Either the development of "smart waste bins" [2] or the proof
+of concept of plastic discrimination[1].
+A. Smart Waste Collecting
+The "smart waste bin" uses sensors in the trash bin to measure the amount of waste that has been collected. Furthermore,
+it features a web server that can be used to check on the system
+remotely. it can also predict the next time that a specific bin
+needs to be emptied based on past fill states using Machine
+Learning. The system is also able to send SMS-Messages and
+even add alerts to Google calendars [2].
+B. Visual Plastic Discrimination
+Using a setup to discriminate between different kinds of
+plastics using cameras has been proven to work reliably. The
+most challenging part of this technique is to ensure the correct
+environment for exact measurements. By using different kinds
+of monochromatic light and filters different images can be
+analyzed to deduct the material that has been scanned. By
+providing samples of different plastics the system should
+recognize the process can also be automated via Machine
+Learning as shown by[1].C. Originality
+The goal of this Project is to combine different aspects of
+these concepts to provide a completely autonomous system
+that detects and discriminates plastics based on desired types
+of plastics, sends out alerts to certain other systems to indicate
+a problem or request to be emptied and, a way to check on
+the systems current state remotely. The main objective of the
+project will concern the visual system to determine the types
+of plastics. The main problem with this method will be the
+condition of the plastic. To provide the best measurements the
+materials should be all the same size, smoothness and level of
+cleanness. But this can only be the goal for the first iteration
+since the user will not be required to wash the waste that is
+thrown into the bin.
+IV. METHODOLOGY & EVALUATION
+A. Visual Analysis
+The first step of this project will be to develop the visual
+analysis system for the specific needs and plastics that will be
+used. A list of potential plastics that are desirable to recycle
+and reuse will be established. This list can change based
+on the kind of processing that the plastics will be used for.
+Based on that list the requirements for the cameras, filters and
+monochrome light sources will be selected. To ensure a certain
+level of robustness the systems will aim to be able to detect
+items that are not fully cleaned or in any uniform shape as
+the users should not be required to apply any pre-processing
+before dropping their waste into the bin. To ensure a correct
+measurement a sealed comparison needs to be constructed to
+ensure the complete isolation from stray environmental light.
+B. Remote Access & Messaging
+To remotely check on the system different concepts need
+to be explored to find the optimal solution. If there is only a
+singular system in use it makes sense to host a web server
+on the device directly to allow access to the system and
+check its state. If there is a multitude of systems in a certain
+area like a building it would be unfeasible to check every
+system’s web server separately. In this scenario, it would make
+more sense to connect these individual systems via a network
+and host a web server that provides access to all of these
+nodes inside the network. Another solution would be a master
+system that collects the data from other nodes regularly and
+then collectively provides the information to the web server.
+Errors messages or maintenance requests like the request to be
+emptied should accouter on one or more additional channels.
+The exact parameters need to be considered but the most
+accessible messaging channels would be E-Mail and/or SMS.
+These methods need to be further evaluated for the specific
+use case.
+C. Evaluation
+The system will be evaluated by the ability to sort unknown
+types of plastic into the correct containers. The first requirement is for the systems to do so reliably. Following this first
+requirement are certain performance-based metrics like:
+• speed of single operation (time needed to process single
+material input)
+• speed of continuous operation (time needed to process
+multiple consecutive inputs)
+• throughput of material (how much material can be processed per minute)
+• accuracy concerning certain types of surface conditions
+and/or cleanliness
+• accuracy of the remote interface regarding fullness (to
+ensure efficiency)
+• accuracy of sending messages regarding errors or required
+maintenance
+• general error handling
+REFERENCES
+[1] M. L. Henriksen, C. B. Karlsen, P. Klarskov, and
+M. Hinge, “Plastic classification via in-line hyperspectral
+camera analysis and unsupervised machine learning,” Vibrational Spectroscopy, vol. 118, 2022. [Online]. Available:
+https://www.sciencedirect.com/science/article/pii/S0924203121001247
+[2] C. J. Baby, H. Singh, A. Srivastava, R. Dhawan, and P. Mahalakshmi,
+“Smart bin: An intelligent waste alert and prediction system using machine learning approach,” in 2017 International Conference on Wireless
+Communications, Signal Processing and Networking (WiSPNET), 2017.
