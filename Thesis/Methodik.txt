@@ -1,0 +1,6 @@
+Methodology:
+To prove, test and quantify the result of this project multiple types of plastics are analysed under different conditions. A sample of material will be placed in different lighting environments and analysed. To ensure that properties like surface finish, shape, size, etc. will not affect the measurements, all material samples will be prepared in a standardised way.
+
+Samples:
+As this project concerns itself with recycling for the purposes of 3D printing, the materials used as samples will be materials that are available and actively used for 3D printing. The samples themselves will be manufactured by 3D printing. The standard shape of the sample is a 5cm x 5cm square plate with rounded corners and a thickness of 5mm. 
+
